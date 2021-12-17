@@ -67,6 +67,8 @@ html, body {
 
 /* ------------ final do sidenav ----------------------*/
 
+/* ------------ inicio do content ----------------------*/
+
 .content {
     position: relative;
     background: #fff;
@@ -94,3 +96,51 @@ html, body {
     color: #6c757d;
     font-size:  24px;
 }
+
+/* ------------ final do content ----------------------*/
+
+/* ------------ Icones ----------------------*/
+
+.open-sidenav-icon{
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    color: #f59949;
+}
+
+.open-sidenav-icon:hover{
+    border-radius: 30px;
+    background-color: rgb(238, 238, 238)  ;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: white;
+    background-color: #f57c13;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-icons i {
+    line-height: 40px;
+}
+
+.close-sidenav-icon {
+    margin: 5px 20px;
+    border: none;
+    background: none;
+    width: 50px;
+    height: 50px;
+}
+
+.close-sidenav-icon:hover {
+    border-radius: 30px;
+    background-color: #f19443 ;
+}
+
+
+/* ------------ Icones ----------------------*/
