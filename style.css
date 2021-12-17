@@ -20,7 +20,7 @@ html, body {
     grid-template-columns: 1fr 5fr;
 }
 
-/* ------------ sidenav ----------------------*/
+/* ------------ começo do sidenav ----------------------*/
 
 .container .sidenav{
     position: relative;
@@ -63,4 +63,34 @@ html, body {
 
 .menu a.selected {
     opacity: 1;
+}
+
+/* ------------ final do sidenav ----------------------*/
+
+.content {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.content .description{
+    position:fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 40px;
+}
+
+.description h1 {
+    color: #343a40;
+    font-size: 36px;
+}
+
+.description h3 {
+    color: #6c757d;
+    font-size: 26px;
+}
+
+.description p {
+    color: #6c757d;
+    font-size:  24px;
 }
