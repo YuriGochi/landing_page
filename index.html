@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidenav">
+        <div  id="sidenav" class="sidenav">
             <div class="sidenav-content">
-                <button class="close-sidenav-icon">
+                <button onclick="closeNav()" class="close-sidenav-icon">
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="image">
@@ -36,7 +36,7 @@
 
         <div class="content">
             <section class="description">
-                <button class="open-sidenav-icon">
+                <button onclick="openNav()" class="open-sidenav-icon">
                     <i class="fa-2x fas fa-bars"></i>
                 </button>
                 <h1>YURI OLIVEIRA GOCHI</h1>
@@ -52,5 +52,14 @@
             </section>
         </div>
     </div>
+<script>
+    function openNav() {
+        document.getElementById("sidenav").style.display = "block";
+      }
+      
+    function closeNav() {
+        document.getElementById("sidenav").style.display = "none";
+      }
+</script>
 </body>
 </html>
