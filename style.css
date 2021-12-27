@@ -20,8 +20,7 @@ html, body {
 }
 
 /* ------------ começo do sidenav ----------------------*/
-
-.container .sidenav{
+.sidenav{
     position: relative;
     background:#f57c13;
     width: 100%;
@@ -34,24 +33,37 @@ html, body {
     transform: translateY(-50%);
 }
 
-.image img {
+.sidenav-close-icon {
+    margin: 5px 20px;
+    border: none;
+    background: none;
+    width: 50px;
+    height: 50px;
+    color: #fff
+}
+
+.sidenav-close-icon:hover {
+    border-radius: 30px;
+    background-color: #f19443 ;
+}
+
+.sidenav-content-image-div {
+    text-align: center;
+}
+
+.sidenav-content-image {
     width: 80%;
     border: 10px solid #f59949;
     border-radius: 50%;
 }
 
-.image {
-    text-align: center;
-}
-
-
-.menu {
+.sidenav-content-menu {
     margin: 20px 0;
     text-align: center;
     position: relative;
 }
 
-.menu a {
+.sidenav-content-menu-item{
     color: white;
     opacity: 0.5;
     font-size: 25px;
@@ -60,7 +72,7 @@ html, body {
     text-decoration: none;
 }
 
-.menu a.selected {
+.selected {
     opacity: 1;
 }
 
@@ -68,30 +80,30 @@ html, body {
 
 /* ------------ inicio do content ----------------------*/
 
-.content {
+.main {
     position: relative;
     background: #fff;
     padding: 40px;
 }
 
-.content .description{
+.main-description{
     position:fixed;
     top: 50%;
     transform: translateY(-50%);
     padding-right: 40px;
 }
 
-.description h1 {
+.main-description-title {
     color: #343a40;
     font-size: 36px;
 }
 
-.description h3 {
+.main-description-subtitle {
     color: #6c757d;
     font-size: 26px;
 }
 
-.description p {
+.main-description-paragraph {
     color: #6c757d;
     font-size:  24px;
 }
@@ -100,19 +112,19 @@ html, body {
 
 /* ------------ Icones ----------------------*/
 
-.open-sidenav-icon{
+.sidenav-open-icon{
     padding: 10px 10px;
     border: none;
     background: none;
     color: #f59949;
 }
 
-.open-sidenav-icon:hover{
+.sidenav-open-icon:hover{
     border-radius: 30px;
     background-color: rgb(238, 238, 238)  ;
 }
 
-.social-icons a{
+.main-description-social-icon{
     text-decoration: none;
     color: white;
     background-color: #f57c13;
@@ -124,22 +136,8 @@ html, body {
     text-align: center;
 }
 
-.social-icons i {
+.fab{
     line-height: 40px;
-}
-
-.close-sidenav-icon {
-    margin: 5px 20px;
-    border: none;
-    background: none;
-    width: 50px;
-    height: 50px;
-    color: #fff
-}
-
-.close-sidenav-icon:hover {
-    border-radius: 30px;
-    background-color: #f19443 ;
 }
 
 
@@ -147,7 +145,7 @@ html, body {
 
 /* ------------ Reponsividade ----------------------*/
 
-.responsive-icons {
+.sidenav-content-menu-hidden {
     display: none;
 }
 
@@ -163,20 +161,20 @@ html, body {
         overflow-x: hidden;
     }
 
-    .content .description {
+    .main-description {
         position:relative;
     }
 
-    .menu a {
+    .sidenav-content-menu-item {
         display: none;
     }
 
-    .sidenav-content{
+    .sidenav-content {
         position:relative;
         top: 180px;
     }
 
-    .responsive-icons {
+    .sidenav-content-menu-hidden {
         display: block;
     }
 
